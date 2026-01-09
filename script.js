@@ -1,0 +1,1 @@
+alert("show Articles on Discipline")
