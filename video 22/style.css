@@ -1,0 +1,23 @@
+.Box{
+    border: 2px solid black;
+    width: 50vw;
+    height: 50vh;
+    color: blue;
+    background-color: aqua;
+    font-size: 1.5em;
+}
+*{
+    margin: 20px;
+    padding: 0;
+    margin:auto;
+}
+.container{ 
+    border: 2px solid rgb(248, 8, 8);
+    width: 50vw;
+    color: blue;
+    background-color: aqua;
+    margin: 23px auto;
+    height: 50vh;        
+    font-size: 1.5em;
+}
+
