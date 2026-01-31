@@ -1,0 +1,98 @@
+.container{
+    border: 2px solid grey;
+    align-items: center;
+    height: 75vh;
+    margin-left: 500px;
+    width: 25vw;
+    margin-top: 100px;
+    text-align: center;
+    color: rgb(22, 4, 128);
+    background-image: linear-gradient(grey,orange);
+    background-color: grey;
+    font-size: 1.3em;
+    font-family: sans-serif;
+}
+.forgot{
+  color: rgb(252, 242, 242);
+  font-size: 0.6em;
+  text-align: left;
+  margin-right: 190px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.forgot:hover{
+  text-decoration: underline;
+}
+.login{
+  color: beige;
+  background-color: blue;
+  width: 22vw;
+  height: 5.3vh;
+  margin-top: 0px;
+}
+.Or-login{
+  color: rgb(196, 228, 236);
+  font-size: 0.8em;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  margin: 10px;
+
+}
+.or-login:hover{
+  
+  text-decoration: underline;
+}
+/* .login1{
+  background-color: rgb(9, 13, 243);
+  margin-right: 200px;
+  height: 4.3vh;
+  width: 8vw;
+}
+.login2{
+  background-color: red;
+  margin-left: 200px;
+  width: 8vw;
+  height: 4.3vh;
+  
+} */
+ .login1,
+ .login2{
+  display: inline-block;
+  width: 8vw;
+  height: 4.3vh;
+ }
+ .login1{
+  background-color: blue;
+  margin-left: 5px;
+ }
+ .login2{
+  background-color: red;
+  margin-left: 50px;
+ }
+ .dont,
+ .dont2{
+  display: inline-block;
+  line-gap-override: 5px;
+  margin-top: 20px;
+
+ }
+ .dont{
+  color: antiquewhite;
+  font-size: 0.8em;
+ }
+ .dont2{
+  color: blue;
+  font-size: 0.8em;
+ }
+.username{
+  margin-left: 10px;
+  width: 22vw;
+height: 4.8vh;
+}
+.password{
+  margin-left: 10px;
+  width: 22vw;
+  height: 4.8vh;
+}
