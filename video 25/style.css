@@ -1,0 +1,9 @@
+nav ul li{
+    list-style:devanagari;
+    background-color: blanchedalmond;
+    list-style-position: inside;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+    
+}
