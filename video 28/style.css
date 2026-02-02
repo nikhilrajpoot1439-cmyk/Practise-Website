@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    margin:3px;
+    padding: 3px;
+    border: 3px solid black;
+    width:60vw;
+    height: 9vw;
+
+}
+.box1{
+    background-color: aqua;
+    position: relative;
+    /* z-index: 10px; */
+    top: 30px;
+    left: 30px;
+    
+
+}
+.box2{
+    background-color: red;
+    position: relative;
+    z-index: 10px;
+    left: 60px;
+}
+.box3{
+    background-color: blue;
+    position: relative;
+    z-index: 50px;
+    left: 90px;
+    top:-30px;
+}
+.box4{
+    background-color: brown;
+    position: relative;
+    left: 120px;
+    top: -60px;
+
+}
+.parent{
+    padding: 45px;
+    margin: 54px;
+    border: 3px solid red;
+    width: 100vw;
+
+}
