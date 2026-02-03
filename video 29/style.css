@@ -1,0 +1,63 @@
+.container{
+    width: 30vw;
+    height: 90vh;
+    border: 3px solid black;
+    align-items: center;
+    margin-left: 400px;
+    margin-top: 40px;
+    background-color: whitesmoke;
+}
+.container1{
+    border: 10px solid white;
+    width: 25vw;
+    height: 75vh;
+    align-items: center;
+    margin:5px;
+    padding: 5px;
+    margin-left:20px;
+    margin-top: 30px;
+    background-color: white;
+    box-shadow: 2px solid grey;
+}
+.image{
+    width: 23vw;
+    height: 10vw;
+    padding: 5px;
+    margin-left: 5px;
+
+}
+.oval{
+    padding: 8px 5px;
+    border-radius: 999px;
+    font-size: 0.7em;
+    line-height: 1.2;
+    border: 2px solid rgba(255, 108, 108, 0.719);
+    cursor: pointer;
+    background: transparent;
+
+
+}
+.topic{
+    margin: 8px;
+}
+.essay{
+    font-size: 1.2em;
+    font-family: sans-serif;
+}
+.oval-btn{
+    background-color: rgb(73, 73, 231);
+    color: blue;
+    padding: 10px 24px;
+    border-radius: 9999px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    
+}
+.center-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
