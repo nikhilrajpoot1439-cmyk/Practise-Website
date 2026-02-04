@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background-color: var(--seccolor);
+}
+.container{
+    background-color: var(--color);
+}
+ul li{
+    list-style: none;
+    padding: 35px;
+    
+}
+ul{
+    display: flex;
+}
+:root{
+    --color:blue;
+    --seccolor:purple;
+}
+ul li:first-child{
+    --color:red;
+    background-color: var(--color);
+}
