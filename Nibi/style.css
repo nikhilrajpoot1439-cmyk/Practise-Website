@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+/* Start Screen */
+#startScreen {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+#startBtn {
+    padding: 18px 40px;
+    font-size: 20px;
+    border-radius: 40px;
+    border: none;
+    background: #ff4d6d;
+    color: white;
+    cursor: pointer;
+}
+
+/* Chat */
+.chat-container {
+    width: 360px;
+    background: #fff;
+    border-radius: 20px;
+    margin: 50px auto;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.header {
+    background: #ff4d6d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.messages {
+    padding: 15px;
+    height: 420px;
+    overflow-y: auto;
+}
+
+.msg {
+    padding: 12px 16px;
+    border-radius: 18px;
+    margin-bottom: 15px;
+    max-width: 80%;
+    animation: fadeIn 0.4s ease;
+}
+
+.left {
+    background: #f2f2f2;
+}
+
+.right {
+    background: #ff4d6d;
+    color: white;
+    margin-left: auto;
+}
+
+/* Actions */
+.actions {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.question {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#yesBtn, #noBtn {
+    padding: 14px 30px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+#yesBtn {
+    background: #ff4d6d;
+    color: white;
+    animation: pulse 1.2s infinite;
+}
+
+#noBtn {
+    background: #ccc;
+    margin-left: 10px;
+}
+
+/* Photo Screen */
+.photo-screen {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.photo-screen img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 40px rgba(255,255,255,0.9);
+    animation: zoomIn 1.5s ease;
+}
+
+.photo-screen h1,
+.photo-screen p {
+    color: white;
+    margin-top: 15px;
+}
+
+/* Respect Screen */
+.response {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg, #6a85b6, #bac8e0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.response h2 {
+    color: white;
+    font-size: 32px;
+}
+
+.response p {
+    color: white;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/* Hearts */
+.hearts::before {
+    content: "❤️ 💖 💕 💘 💗";
+    position: fixed;
+    inset: 0;
+    font-size: 30px;
+    opacity: 0.3;
+    animation: float 6s linear infinite;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+@keyframes zoomIn {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+@keyframes float {
+    from {transform: translateY(100%);}
+    to {transform: translateY(-100%);}
+}
+
+.hidden {
+    display: none;
+}

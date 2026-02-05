@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>From My Heart ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- START SCREEN -->
+<div id="startScreen">
+    <button id="startBtn">💖 Tap to Open My Heart 💖</button>
+</div>
+
+<audio id="bgMusic" src="music.mp3" loop></audio>
+
+<div class="hearts"></div>
+
+<!-- CHAT -->
+<div class="chat-container hidden" id="chatBox">
+    <div class="header">💌 My Inbox</div>
+    <div class="messages" id="messages"></div>
+</div>
+
+<!-- ACTIONS -->
+<div class="actions hidden" id="actions">
+    <p class="question">What do you feel? 🤍</p>
+    <button id="yesBtn">YES 💍</button>
+    <button id="noBtn">Not Yet 💭</button>
+</div>
+
+<!-- YES SCREEN -->
+<div class="photo-screen hidden" id="photoScreen">
+    <img src="her.jpg">
+    <h1>You said YES ❤️</h1>
+    <p>My forever starts with you ✨</p>
+</div>
+
+<!-- NO SCREEN -->
+<div class="response hidden" id="response">
+    <h2>It’s okay 💙</h2>
+    <p>
+        Your feelings matter the most.<br>
+        I’ll wait — without pressure, without force.
+    </p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
