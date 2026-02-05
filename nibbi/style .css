@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at top, #ffb3d9, #2b1055),
+        linear-gradient(135deg, #ff758c, #ff7eb3);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Click Overlay */
+#clickStart {
+    position: fixed;
+    inset: 0;
+    background: rgba(20, 5, 40, 0.85);
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffd6ff;
+    font-size: 26px;
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+/* Card */
+.card {
+    position: relative;
+    z-index: 10;
+    width: 400px;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 45px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow:
+        0 0 30px rgba(255, 0, 150, 0.4),
+        inset 0 0 15px rgba(255,255,255,0.2);
+    animation: fadeIn 2s ease;
+}
+
+.heart-main {
+    font-size: 70px;
+    text-shadow: 0 0 20px #ff4d6d;
+    animation: beat 1.2s infinite;
+}
+
+/* Title */
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    background: linear-gradient(45deg, #ffb703, #ff4d6d);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 15px;
+}
+
+/* Text */
+p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+    text-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+/* Buttons */
+.buttons {
+    position: relative;
+    height: 60px;
+    margin-top: 25px;
+}
+
+button {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+/* Yes */
+#yesBtn {
+    background: linear-gradient(45deg, #ff4d6d, #ffb703);
+    color: white;
+    box-shadow: 0 0 20px rgba(255,77,109,0.8);
+}
+
+#yesBtn:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 30px #ffb703;
+}
+
+/* No */
+#noBtn {
+    background: rgba(255,255,255,0.3);
+    color: #fff;
+    position: absolute;
+    right: 0;
+}
+
+/* Ring */
+.ring {
+    position: fixed;
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 100px;
+    display: none;
+    z-index: 30;
+    filter: drop-shadow(0 0 20px gold);
+    animation: ringUp 2s ease forwards;
+}
+
+/* Animations */
+@keyframes beat {
+    0%,100% { transform: scale(1); }
+    50% { transform: scale(1.4); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes ringUp {
+    0% { bottom: -120px; transform: translateX(-50%) scale(0); }
+    70% { transform: translateX(-50%) scale(1.3); }
+    100% { bottom: 50%; transform: translateX(-50%) scale(1); }
+}
