@@ -1,0 +1,10 @@
+.box1{
+    background-color: red;
+}
+.boxes::selection{
+    color: blue;
+    background-color: black;
+}
+.boxes::first-letter{
+    font-size: 50px;
+}
