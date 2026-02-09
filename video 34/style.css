@@ -1,0 +1,18 @@
+.image{
+    width: 230px;
+    height: 50vh;
+    /* float: right; */
+    float: right;
+}
+.cards{
+    border: 2px solid black;
+    display: flow-root;
+}
+.card{
+    border: 2px solid red;
+}
+.card5{
+    background-color: aqua;
+    clear: right;
+
+}
