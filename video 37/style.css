@@ -1,0 +1,168 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.box{
+    height: 95vh;
+    width: 95vw;
+    border: 2px solid black;
+    background-image: url(shop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 30px;
+    position: relative;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 90px;
+    align-items:center ;
+    list-style: none;
+    gap: 40px;
+    margin-top: 18px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+
+    text-decoration: underline;
+}
+.shop{
+    color: orangered;
+    padding-left: 10px;
+    font-size: 2em;
+  font-style: italic ;
+  font-family: sans-serif;
+}
+.text{
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 2px solid red;
+    margin-left:auto;
+    outline:none;
+}
+.bottom-left-text {
+
+    position: absolute;  
+    left: 25px;          
+    bottom: 100px;        
+    color: whitesmoke;
+    font-size: 1.2em;
+    font-weight: bold;  
+    font-size: 2em; 
+    
+}
+.Welcome{
+    color: rgb(252, 216, 13);
+    list-style:None;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+
+
+.box {
+    position: relative; 
+}
+
+.box1 {
+    position: absolute;
+    bottom: 2px;       
+    left: 71%;          
+    width: 350px;        
+    height: 450px;      
+    background-color: black;
+    display: flex;
+    flex-direction: column; 
+    justify-content:auto; 
+    align-items:center;    
+    border:2px;               
+}
+.box2{
+    width: 22vw;
+    height:7vh ;
+    border: 2px solid black;
+    margin: 20px;
+    border-radius: 10px;
+    color: brown;
+    text-align: center;
+    padding: 3px;
+    background-color: white;
+    padding-top:5px;
+    font-size: 1.5em;
+}
+.email{
+    border: 3px solid black;
+    border-bottom: 3px solid brown;
+    width: 22vw;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+
+}
+.password{
+    border: 3px solid black;
+    border-bottom: 3px solid brown;
+    width: 22vw;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    margin: 20px; 
+}
+.login-btn{
+    width: 22vw;
+    height:7vh ;
+    margin: 20px;
+    border-radius: 10px;
+    color: brown;
+    text-align: center;
+    padding: 3px;
+    background-color: orange;
+    padding-top:5px;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+.sign{
+    width: 11vw;
+    height:5vh ;
+    margin: 30px;
+    color: orange;
+    text-align: center;
+    text-decoration: underline;
+    background-color: black;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.sign:hover{
+    background-color: orangered;
+}
+.can{
+    color:white;
+    padding-top: 20px;
+    
+}
+
+
+
+   
